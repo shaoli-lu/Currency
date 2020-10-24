@@ -1,5 +1,5 @@
 img {
-    height: 15%;
+    height: 4.7%;
 }
 
 .container {
@@ -37,7 +37,7 @@ img {
 
 @keyframes grow {
     from {font-size: 18px;}
-    to {font-size: 36px; color: orange;}
+    to {font-size: 36px; color: goldenrod;}
 }
 
 #grow {
@@ -46,6 +46,7 @@ img {
     animation-fill-mode: forwards;
         
 }
+
 .left {
     text-align: left;
 }
