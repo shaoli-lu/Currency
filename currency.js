@@ -2,7 +2,7 @@ let rates = []
 document.addEventListener('DOMContentLoaded', function() {
 fetch("https://api.exchangeratesapi.io/latest?base=USD").then(response => response.json()).then(data => {
     
-    document.querySelector('#date').innerHTML = "As of Date: " + data.date;    
+    document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
     rates = data.rates;
     document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(2);    
