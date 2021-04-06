@@ -1,6 +1,6 @@
 let rates = []
 document.addEventListener('DOMContentLoaded', function() {
-fetch("https://api.exchangeratesapi.io/latest?base=USD").then(response => response.json()).then(data => {
+fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
     
     document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
