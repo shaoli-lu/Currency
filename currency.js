@@ -1,7 +1,8 @@
 let rates = []
 document.addEventListener('DOMContentLoaded', function() {
-fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
-    
+//USD based
+// fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
+    fetch("https://api.exchangerate.host/latest?base=USD").then(response => response.json()).then(data => {    
     document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
     rates = data.rates;
@@ -15,13 +16,11 @@ fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.j
     document.querySelector('#cad').innerHTML = 'Canadian Dollar:   ' + rates.CAD.toFixed(2); 
     document.querySelector('#mxn').innerHTML = 'Mexican Peso:   ' + rates.MXN.toFixed(2); 
     document.querySelector('#eur').innerHTML = 'Euro:   ' + rates.EUR.toFixed(2); 
-    
-        
-})
+ })
 
 })
 
-$(document).ready(function () {
+/* $(document).ready(function () {
 
     $('xdiv').hover(
     function () {
@@ -44,4 +43,4 @@ $(document).ready(function () {
         $(this).fadeIn();
 
     });
-});
+}); */
