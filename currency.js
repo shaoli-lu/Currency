@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     rates = data.rates;
     document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(2);    
+    document.querySelector('#thb').innerHTML = 'Thai Baht: ' + rates.THB.toFixed(2);    
     document.querySelector('#krw').innerHTML = 'Korean Won:   ' + rates.KRW.toFixed(2); 
     document.querySelector('#jpy').innerHTML = 'Japanese Yen:   ' + rates.JPY.toFixed(2); 
     document.querySelector('#inr').innerHTML = 'Indian Rupee:   ' + rates.INR.toFixed(2); 
