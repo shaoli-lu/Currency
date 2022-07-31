@@ -2,11 +2,12 @@ let rates = []
 document.addEventListener('DOMContentLoaded', function() {
 //USD based
 // fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
-    fetch("https://api.exchangerate.host/latest?base=USD").then(response => response.json()).then(data => {    
+    fetch(`https://api.exchangerate.host/latest?base=USD`,{ method: "GET", }).then(response => response.json()).then(data => {    
     document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
     rates = data.rates;
-    document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(2);    
+    document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(2);  
+    document.querySelector('#vnd').innerHTML = 'Vietnam Dong: ' + rates.VND.toFixed(2);      
     document.querySelector('#thb').innerHTML = 'Thai Baht: ' + rates.THB.toFixed(2);    
     document.querySelector('#krw').innerHTML = 'Korean Won:   ' + rates.KRW.toFixed(2); 
     document.querySelector('#jpy').innerHTML = 'Japanese Yen:   ' + rates.JPY.toFixed(2); 
