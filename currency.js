@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#mxn').innerHTML = 'Mexican Peso:   ' + rates.MXN.toFixed(2); 
     document.querySelector('#sgd').innerHTML = 'Singapore $:   ' + rates.SGD.toFixed(2); 
     document.querySelector('#eur').innerHTML = 'Euro:   ' + rates.EUR.toFixed(2); 
+    document.querySelector('#try').innerHTML = 'Turkish Lira: ' + rates.TRY.toFixed(2); 
     document.querySelector('#php').innerHTML = 'Philippine Peso:   ' + rates.PHP.toFixed(2); 
     document.querySelector('#myr').innerHTML = 'Malaysian Ringgit:   ' + rates.MYR.toFixed(2); 
     
