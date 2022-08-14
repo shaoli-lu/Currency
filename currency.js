@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#try').innerHTML = 'Turkish Lira: ' + rates.TRY.toFixed(2); 
     document.querySelector('#php').innerHTML = 'Philippine Peso:   ' + rates.PHP.toFixed(2); 
     document.querySelector('#myr').innerHTML = 'Malaysian Ringgit:   ' + rates.MYR.toFixed(2); 
+    document.querySelector('#cup').innerHTML = 'Cuban Peso:   ' + rates.CUP.toFixed(2); 
+    document.querySelector('#uah').innerHTML = 'Ukraine Hryvnia:   ' + rates.CUP.toFixed(2); 
+    document.querySelector('#pln').innerHTML = 'Polish Zloty:   ' + rates.PLN.toFixed(2); 
+    document.querySelector('#czk').innerHTML = 'Czech Koruna:   ' + rates.CZK.toFixed(2); 
+    document.querySelector('#all').innerHTML = 'Albanian Lek:   ' + rates.ALL.toFixed(2); 
+    document.querySelector('#dzd').innerHTML = 'Algerian Dinar:   ' + rates.DZD.toFixed(2); 
+    document.querySelector('#bgn').innerHTML = 'Bulgarian Lev:   ' + rates.BGN.toFixed(2); 
     
  })
 
