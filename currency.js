@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#all').innerHTML = 'Albanian Lek:   ' + rates.ALL.toFixed(2); 
     document.querySelector('#dzd').innerHTML = 'Algerian Dinar:   ' + rates.DZD.toFixed(2); 
     document.querySelector('#bgn').innerHTML = 'Bulgarian Lev:   ' + rates.BGN.toFixed(2); 
+    document.querySelector('#lak').innerHTML = 'Lao Kip:   ' + rates.LAK.toFixed(2); 
     
  })
 
