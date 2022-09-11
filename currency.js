@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     rates = data.rates;
 	document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toLocaleString('en-US',  {minimumFractionDigits:2} );  
-    document.querySelector('#vnd').innerHTML = 'Vietnam Dong: ' + rates.VND.toLocaleString('en-US',  {minimumFractionDigits:2} );      
+    document.querySelector('#hkd').innerHTML = 'Hong Kong Dollar: ' + rates.HKD.toLocaleString('en-US',  {minimumFractionDigits:2} );  
+    document.querySelector('#vnd').innerHTML = 'Vietnam Dong: ' + rates.VND.toLocaleString('en-US',  {minimumFractionDigits:2} );          
     document.querySelector('#thb').innerHTML = 'Thai Baht: ' + rates.THB.toLocaleString('en-US',  {minimumFractionDigits:2} );    
     document.querySelector('#krw').innerHTML = 'Korean Won:   ' + rates.KRW.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#jpy').innerHTML = 'Japanese Yen:   ' + rates.JPY.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
