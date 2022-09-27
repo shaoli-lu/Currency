@@ -1,4 +1,4 @@
-const refreshTime = 6;
+const refreshTime = 600;
 
 let rates = [];
 document.addEventListener('DOMContentLoaded', function() {showCurrency()});
