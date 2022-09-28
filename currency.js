@@ -138,7 +138,7 @@ function showCurrency() {
 }
 
 
-setInterval(showCurrency, refreshTime);
+// setInterval(showCurrency, refreshTime);
 
 /* $(document).ready(function () {
 
