@@ -2,7 +2,7 @@ const refreshTime = 600;
 
 let rates = [];
 document.addEventListener('DOMContentLoaded', function() {showCurrency()});
-
+/* 
 function showCurrency() {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://api.exchangerate.host/latest?base=USD', true);
@@ -71,12 +71,13 @@ function showCurrency() {
     }
     xhr.send();
     
-    }
-    setInterval(showCurrency, refreshTime);
+    } */
+
     
-/* document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() { */
 //USD based
-// fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
+function showCurrency() { 
+    //fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
     fetch(`https://api.exchangerate.host/latest?base=USD`,{ method: "GET", }).then(response => response.json()).then(data => {    
     document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
@@ -134,8 +135,11 @@ function showCurrency() {
 
  })
 
-})
- */
+}
+
+
+setInterval(showCurrency, refreshTime);
+
 /* $(document).ready(function () {
 
     $('xdiv').hover(
