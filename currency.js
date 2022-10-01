@@ -92,6 +92,7 @@ function showCurrency() {
     document.querySelector('#aud').innerHTML = 'Australian Dollar:   ' + rates.AUD.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#gbp').innerHTML = 'British Pound:   ' + rates.GBP.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#rub').innerHTML = 'Russian Ruble:   ' + rates.RUB.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
+    document.querySelector('#cop').innerHTML = 'Colombian Peso:   ' + rates.COP.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#cad').innerHTML = 'Canadian Dollar:   ' + rates.CAD.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#mxn').innerHTML = 'Mexican Peso:   ' + rates.MXN.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#sgd').innerHTML = 'Singapore Dollar:   ' + rates.SGD.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
