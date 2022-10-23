@@ -86,3 +86,5 @@ input:focus {
 ul {
     font-weight: bold ;
 }
+
+#fixed {font-size: 28px; color: goldenrod;}
