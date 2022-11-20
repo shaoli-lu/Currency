@@ -113,6 +113,7 @@ function showCurrency() {
     document.querySelector('#bdt').innerHTML = 'Bangladeshi Taka:   ' + rates.BDT.toLocaleString('en-US',  {minimumFractionDigits:2} );  
     document.querySelector('#pkr').innerHTML = 'Pakistan Rupee:   ' + rates.PKR.toLocaleString('en-US',  {minimumFractionDigits:2} );  
     document.querySelector('#brl').innerHTML = 'Brazilian Real:   ' + rates.BRL.toLocaleString('en-US',  {minimumFractionDigits:2} );  
+	document.querySelector('#qar').innerHTML = 'Qatari Rial:   ' + rates.QAR.toLocaleString('en-US',  {minimumFractionDigits:2} );  
 
     document.querySelector('#crc').innerHTML = 'Costa Rican Colón: ' + rates.CRC.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#czk').innerHTML = 'Czech Koruna: ' + rates.CZK.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
