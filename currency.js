@@ -1,10 +1,10 @@
 const refreshTime = 600;
-
+let xhr = new XMLHttpRequest();
 let rates = [];
 document.addEventListener('DOMContentLoaded', function() {showCurrency()});
 
 function showCurrency() {
-    let xhr = new XMLHttpRequest();
+  
     xhr.open('GET', 'https://api.exchangerate.host/latest?base=USD', true);
     xhr.onload = function() {
     if (xhr.status == 200) {
