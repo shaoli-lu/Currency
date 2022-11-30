@@ -1,7 +1,7 @@
 const refreshTime = 600;
 let xhr = new XMLHttpRequest();
 let rates = [];
-// document.addEventListener('DOMContentLoaded', function() {showCurrency()});
+document.addEventListener('DOMContentLoaded', function() {showCurrency()});
 
 function showCurrency() {
   
