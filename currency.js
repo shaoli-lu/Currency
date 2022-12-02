@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {showCurrency()});
 
 function showCurrency() {
   
-    xhr.open('GET', 'https://api.exchangerate.host/latest?base=USD', true);
-    xhr.onload = function() {
-    if (xhr.status == 200) {
+    //xhr.open('GET', 'https://api.exchangerate.host/latest?base=USD', true);
+    //xhr.onload = function() {
+    //if (xhr.status == 200) {
 
-        let data = JSON.parse(this.response);
+    //    let data = JSON.parse(this.response);
     //USD based
     // fetch("https://api.ratesapi.io/api/latest?base=USD").then(response => response.json()).then(data => {
-     //   fetch(`https://api.exchangerate.host/latest?base=USD`,{ method: "GET", }).then(response => response.json()).then(data => {    
+     fetch(`https://api.exchangerate.host/latest?base=USD`,{ method: "GET", }).then(response => response.json()).then(data => {    
         document.querySelector('#date').innerHTML = "As of: " + data.date;    
         
         rates = data.rates;
@@ -70,9 +70,9 @@ function showCurrency() {
     document.querySelector('#ron').innerHTML = 'Romanian Leu: ' + rates.RON.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
     document.querySelector('#aed').innerHTML = 'Emirati Dirham: ' + rates.AED.toLocaleString('en-US',  {minimumFractionDigits:2} ); 
 
-     }
-    }
-    xhr.send();
+    // }
+    })
+   // xhr.send();
      
 }
 
@@ -144,7 +144,7 @@ function showCurrency() {
 } */
 
 
-setInterval(showCurrency, refreshTime);
+// setInterval(showCurrency, refreshTime);
 
 /* $(document).ready(function () {
 
